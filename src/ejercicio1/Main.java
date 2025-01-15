@@ -1,4 +1,4 @@
-package src;
+package src.ejercicio1;
 
 import java.util.Scanner;
 
@@ -9,7 +9,12 @@ public class Main {
         int num = sc.nextInt();
         System.out.print("Ingrese el segundo numero: ");
         int num2 = sc.nextInt();
-        System.out.println("numeros  " + num + num2);
+
+        Contador c = new Contador(num, num2);
+        Thread t = new Thread(c);
+        t.start();
+        System.out.println("El hilo se ha lanzado: ");
+
 
     }
 }
