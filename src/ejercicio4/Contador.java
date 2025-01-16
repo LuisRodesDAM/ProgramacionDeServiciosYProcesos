@@ -11,15 +11,15 @@ public class Contador implements Runnable{
     public void run() {
         while (ejecutar) {
             contador++;
-            //if (contador <=5)
-            System.out.println(contador);
+            if (contador <=5)
+                System.out.println(contador);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
-        System.out.println("Contador: " + contador + "Aleatorio: " + aleatorio);
+        System.out.println("Contador: " + contador + " - Aleatorio: " + aleatorio);
         if (contador == aleatorio) {
             System.out.println("Has ganado!!!!!!!");
         } else {
