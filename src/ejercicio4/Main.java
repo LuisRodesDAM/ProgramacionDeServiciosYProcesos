@@ -15,5 +15,15 @@ public class Main {
         t.start();
         sc.nextLine();
         c.detener();
+        /*Se debe llamar al metodo join del hilo por si ejecuta la comprobacion y el hilo
+        todavia no se ha parado t.join() e igual nos pide meterlo en try
+        variante de programa, nos traemos el if de la clase
+        int contador = c.getContador(); asi nos traemos contador de la clase
+        if (contador == aleatorio) {
+            System.out.println("Has ganado!!!!!!!");
+        } else {
+            System.out.println("Has perdido el contador estaba en " + contador);
+        }
+         */
     }
 }

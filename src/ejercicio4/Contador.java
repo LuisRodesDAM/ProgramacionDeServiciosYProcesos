@@ -25,6 +25,12 @@ public class Contador implements Runnable{
         } else {
             System.out.println("Has perdido el contador estaba en " + contador);
         }
+        /*variante de programa, si nos llevamos el if
+         ttodo lo relaccionado hay que borrarlo de aqui
+         y el contructor y demas tambien y pasar contador con el
+         metodo get
+         pblic int getContador(){return contador;}
+         */
     }
     public void detener () {
         ejecutar = false;
